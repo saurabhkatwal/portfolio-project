@@ -13,12 +13,44 @@ h1{
 h2{
     font-size: 2rem;
 }
+h3{
+    font-size: 1.5rem;
+}
 a{
     text-decoration: none;
 }
-
+i{
+    color: #555;
+    padding: 0.2rem 0;
+    position: relative;
+}
+a:hover>i{
+color: #2978b5;
+transition: color 0.3s ease-out;
+}
 button,i{
     cursor: pointer;
+}
+button{
+    position: relative;
+}
+button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    background-color: #2978b5;
+    height: 100%;
+    transition:all 0.4s ease-out;
+}
+.btn-wrapper:hover button::before{
+    z-index: -1;
+    width: 100%;
+}
+.btn-wrapper:hover button{
+    z-index: 2;
+    color: #fff;
 }
 header{
     display: flex;
@@ -143,7 +175,7 @@ ul li>small{
 .contact-section>h2{
     margin-bottom: 2rem;
 }
-.contact-section>button{
+.contact-section button{
     font-size: 0.9rem;
     padding: 0.8rem 1.2rem;
     color: #2978b5;
