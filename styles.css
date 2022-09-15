@@ -159,6 +159,9 @@ p.user-desc {
 /* .project-title, .project-desc, .project-skills{
     margin-bottom: 3rem !important;
 } */
+.projects{
+    display: block;
+}
 .project {
     background-color: #fff;
     display: flex;
@@ -168,6 +171,7 @@ p.user-desc {
     align-items: center;
     box-shadow: 1px 1px 15px 2px #ccc, -1px -1px 15px 2px #ddd;
     padding: 2rem;
+    cursor: pointer;
 }
 
 .project-links {
@@ -193,6 +197,13 @@ ul li>small {
     margin-bottom: 3rem;
 }
 
+.project{
+    transform: translateY(0);
+    transition:transform 0.4s ease-out;
+}
+.project:hover{
+    transform: translateY(-5px);
+}
 .skills-container {
     text-align: center;
 }
@@ -278,4 +289,25 @@ position: relative;
 }
 .text-wrapper>.layer:hover .temp::before{
     width: 100%;
+}
+
+@media(min-width:470px){
+    .projects{
+        display: grid;
+        column-gap: 1rem;
+        grid-template-columns: repeat( auto-fit, minmax(270px, 1fr) );
+    }
+}
+@media(min-width:560px){
+    .user-info{
+        text-align: center;
+        width: 60%;
+        margin: auto;
+    }
+    .user-links{
+        justify-content: center;
+    }
+    .user-desc{
+        text-align: left;
+    }
 }
