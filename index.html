@@ -17,178 +17,201 @@
 </head>
 
 <body>
-    <header>
-        <div class="text-wrapper">
-            <div class="layer">
-                <div class="temp">
-                    <h3 class="logo"><a href="">JS</a></h3>
-                </div>
-            </div>
-        </div>
-        <nav>
-            <div class="nav-desktop">
-                <ul>
+    <div class="toggle-night">
+        <div class="toggle">
+            <input type="checkbox" name="" id="toggle">
+            <label for="toggle" id="in-toggle"></label>
+            <div class="main-container">
+                <header>
                     <div class="text-wrapper">
                         <div class="layer">
                             <div class="temp">
-                                <li><a href="#projects">Projects</a></li>
+                                <h3 class="logo"><a href="" class="primary">JS</a></h3>
                             </div>
                         </div>
                     </div>
-                    <div class="text-wrapper">
-                        <div class="layer">
-                            <div class="temp">
-                                <li><a href="#skills">Skills</a></li>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-wrapper">
-                        <div class="layer">
-                            <div class="temp">
-                                <li><a href="#contacts">Contact</a></li>
-                            </div>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-            <div class="menu-wrap">
-                <input type="checkbox" class="toggler">
-                <div class="hamburger">
-                    <div></div>
-                </div>
-                <div class="menu">
-                    <div>
-                        <div>
+                    <nav>
+                        <div class="nav-desktop">
                             <ul>
-                                <li><a href="#projects">Projects</a></li>
-                                <li><a href="#skills">Skills</a></li>
-                                <li><a href="#contacts">Contact</a></li>
+                                <div class="text-wrapper">
+                                    <div class="layer">
+                                        <div class="temp">
+                                            <li><a href="#projects" class="txt-grey">Projects</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-wrapper">
+                                    <div class="layer">
+                                        <div class="temp">
+                                            <li><a href="#skills"class="txt-grey">Skills</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-wrapper">
+                                    <div class="layer">
+                                        <div class="temp">
+                                            <li><a href="#contacts"class="txt-grey">Contact</a></li>
+                                        </div>
+                                    </div>
+                                </div>
                             </ul>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <i class="fa-solid fa-toggle-on fa-2x"></i>
-            <i class="fa-solid fa-bars fa-2x"></i> -->
-        </nav>
+                        <div class="menu-wrap">
+                            <input type="checkbox" class="toggler">
+                            <div class="hamburger">
+                                <div></div>
+                            </div>
+                            <div class="menu">
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <li><a href="#projects"class="txt-grey">Projects</a></li>
+                                            <li><a href="#skills"class="txt-grey">Skills</a></li>
+                                            <li><a href="#contacts"class="txt-grey">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <i class="fa-solid fa-toggle-on fa-2x"></i>
+                        <i class="fa-solid fa-bars fa-2x"></i> -->
+                    </nav>
 
-    </header>
-    <main>
-        <div class="user-info">
-            <h1>Hi, I am <span>John Smith.</span></h1>
-            <h2>A Front End Engineer.</h2>
-            <p class="user-desc">Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis
-                corporis nulla
-                aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis!
-                Maiores minima consectetur.
-            </p>
-            <div class="user-links">
-                <div class="btn-wrapper">
-                    <button>resume</button>
-                </div>
-                <div class="icon-wrapper">
-                    <div class="layer"><a href=""><i class="fa-brands fa-github fa-2x"></i></a></div>
-                </div>
-                <div class="icon-wrapper">
-                    <div class="layer"><a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a></div>
-                </div>
+                </header>
+                <main>
+                    <div class="user-info">
+                        <h1 class="txt-title">Hi, I am <span class="primary">John Smith.</span></h1>
+                        <h2 class="txt-title">A Front End Engineer.</h2>
+                        <p class="user-desc txt-grey">Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis
+                            perspiciatis
+                            corporis nulla
+                            aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque
+                            perspiciatis!
+                            Maiores minima consectetur.
+                        </p>
+                        <div class="user-links">
+                            <div class="btn-wrapper">
+                                <button>resume</button>
+                            </div>
+                            <div class="icon-wrapper">
+                                <div class="layer"><a href=""><i class="fa-brands fa-github fa-2x"></i></a></div>
+                            </div>
+                            <div class="icon-wrapper">
+                                <div class="layer"><a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="project-section" id="projects">
+                        <h2 class="txt-title">PROJECTS</h2>
+                        <div class="projects">
+                            <div class="project">
+                                <h3 class="txt-title">Project 1</h3>
+                                <p class="txt-grey">Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia
+                                    et esse
+                                    aliquam</p>
+                                <ul>
+                                    <li><small class="txt-title">Sass</small></li>
+                                    <li><small class="txt-title">Typescript</small></li>
+                                    <li><small class="txt-title">React</small></li>
+                                </ul>
+                                <div class="project-links">
+                                    <div class="icon-wrapper">
+                                        <div class="layer"><a href=""><i class="fa-brands fa-github fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="icon-wrapper">
+                                        <div class="layer"><a href=""><i
+                                                    class="fa-solid fa-square-up-right fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <h3 class="project-title txt-title">Project 2</h3>
+                                <p class="project-desc txt-grey">Amet asperiores et impedit aliquam consectetur? Voluptates sed a
+                                    nulla
+                                    ipsa
+                                    officia et esse
+                                    aliquam</p>
+                                <ul class="project-skills">
+                                    <li><small class="txt-title">Sass</small></li>
+                                    <li><small class="txt-title">Typescript</small></li>
+                                    <li><small class="txt-title">React</small></li>
+                                </ul>
+                                <div class="project-links">
+                                    <div class="icon-wrapper">
+                                        <div class="layer"><a href=""><i class="fa-brands fa-github fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="icon-wrapper">
+                                        <div class="layer"><a href=""><i
+                                                    class="fa-solid fa-square-up-right fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <h3 class="txt-title">Project 3</h3>
+                                <p class="txt-grey">Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia
+                                    et esse
+                                    aliquam</p>
+                                <ul>
+                                    <li><small class="txt-title">Sass</small></li>
+                                    <li><small class="txt-title">Typescript</small></li>
+                                    <li><small class="txt-title">React</small></li>
+                                </ul>
+                                <div class="project-links">
+                                    <div class="icon-wrapper">
+                                        <div class="layer"><a href=""><i class="fa-brands fa-github fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="icon-wrapper">
+                                        <div class="layer"><a href=""><i
+                                                    class="fa-solid fa-square-up-right fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="skills-section" id="skills">
+                        <div class="skills-container">
+                            <h2 class="txt-title">Skills</h2>
+                            <ul class="skills-list">
+                                <li class="txt-grey">HTML</li>
+                                <li class="txt-grey">CSS</li>
+                                <li class="txt-grey">JavaScript</li>
+                                <li class="txt-grey">TypeScript</li>
+                                <li class="txt-grey">React</li>
+                                <li class="txt-grey">Redux</li>
+                                <li class="txt-grey">SASS</li>
+                                <li class="txt-grey">Material UI</li>
+                                <li class="txt-grey">Git</li>
+                                <li class="txt-grey">CI/CD</li>
+                                <li class="txt-grey">Jest</li>
+                                <li class="txt-grey">Enzyme</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="contact-section" id="contact">
+                        <h2 class="txt-title">CONTACT</h2>
+                        <div class="btn-wrapper">
+                            <button>email me</button>
+                        </div>
+                    </section>
+                </main>
+                <footer>
+                    <div class="text-wrapper">
+                        <div class="layer">
+                            <div class="temp">
+                                <a href="" class="primary">Created by Raj Shekhar</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
-        <section class="project-section" id="projects">
-            <h2>PROJECTS</h2>
-            <div class="projects">
-                <div class="project">
-                    <h3>Project 1</h3>
-                    <p>Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse
-                        aliquam</p>
-                    <ul>
-                        <li><small>Sass</small></li>
-                        <li><small>Typescript</small></li>
-                        <li><small>React</small></li>
-                    </ul>
-                    <div class="project-links">
-                        <div class="icon-wrapper">
-                            <div class="layer"><a href=""><i class="fa-brands fa-github fa-2x"></i></a></div>
-                        </div>
-                        <div class="icon-wrapper">
-                            <div class="layer"><a href=""><i class="fa-solid fa-square-up-right fa-2x"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3 class="project-title">Project 2</h3>
-                    <p class="project-desc">Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa
-                        officia et esse
-                        aliquam</p>
-                    <ul class="project-skills">
-                        <li><small>Sass</small></li>
-                        <li><small>Typescript</small></li>
-                        <li><small>React</small></li>
-                    </ul>
-                    <div class="project-links">
-                        <div class="icon-wrapper">
-                            <div class="layer"><a href=""><i class="fa-brands fa-github fa-2x"></i></a></div>
-                        </div>
-                        <div class="icon-wrapper">
-                            <div class="layer"><a href=""><i class="fa-solid fa-square-up-right fa-2x"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3>Project 3</h3>
-                    <p>Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse
-                        aliquam</p>
-                    <ul>
-                        <li><small>Sass</small></li>
-                        <li><small>Typescript</small></li>
-                        <li><small>React</small></li>
-                    </ul>
-                    <div class="project-links">
-                        <div class="icon-wrapper">
-                            <div class="layer"><a href=""><i class="fa-brands fa-github fa-2x"></i></a></div>
-                        </div>
-                        <div class="icon-wrapper">
-                            <div class="layer"><a href=""><i class="fa-solid fa-square-up-right fa-2x"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="skills-section" id="skills">
-            <div class="skills-container">
-                <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>TypeScript</li>
-                    <li>React</li>
-                    <li>Redux</li>
-                    <li>SASS</li>
-                    <li>Material UI</li>
-                    <li>Git</li>
-                    <li>CI/CD</li>
-                    <li>Jest</li>
-                    <li>Enzyme</li>
-                </ul>
-            </div>
-        </section>
-        <section class="contact-section" id="contact">
-            <h2>CONTACT</h2>
-            <div class="btn-wrapper">
-                <button>email me</button>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="text-wrapper">
-            <div class="layer">
-                <div class="temp">
-                    <a href="">Created by Raj Shekhar</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </div>
 </body>
 
 </html>

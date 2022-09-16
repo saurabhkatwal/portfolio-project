@@ -8,7 +8,9 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #fcfcfc;
 }
-
+.main-container{
+    background-color: #fff;
+}
 h1 {
     font-size: 2.6rem;
 }
@@ -32,6 +34,100 @@ i {
     color: #555;
     padding: 0.2rem 0;
     position: relative;
+}
+.txt-grey{
+    color:#555;
+}
+/*-------------------------------------------Night toggle----------------------------------------*/
+.toggle-night{
+    background-color: #23283e;
+}
+.toggle-night label {
+    display: block;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #999;
+    transition: background-color 0.3s ease-in;
+    position: relative;
+}
+
+.toggle-night label::before {
+    content: "";
+    display: block;
+    background-color: #fff;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 2px;
+    border-radius: 50%;
+    left: 3px;
+    transition: left 0.3s ease-in;
+}
+
+.toggle-night input:checked+label {
+    background-color: dodgerblue;
+}
+
+.toggle-night input:checked+label::before {
+    left: 23px;
+    transition: left 0.3s ease-in;
+}
+
+
+.toggle-night input {
+    display: none;
+}
+
+#toggle:checked~.main-container,#toggle:checked~.main-container #projects .project{
+    background-color: #23283e;
+}
+#toggle:checked~.main-container .txt-grey{
+    color: #bdbddd;
+}
+#toggle:checked ~.main-container .txt-title{
+    color: #cdcdff;
+}
+#toggle:checked ~.main-container .primary{
+    color: #90a0d9;
+}
+#toggle:checked ~ .main-container i{
+    color: #bdbddd;
+}
+#toggle:checked ~ .main-container i:hover{
+    color: #90a0d9;
+}
+#toggle:checked~.main-container .icon-wrapper>.layer::before{
+    background-color: #90a0d9;
+}
+#toggle:checked~.main-container .icon-wrapper:hover>.layer::before{
+    background-color: #90a0d9;
+}
+#toggle:checked~.main-container .temp::before{
+    background-color: #90a0d9;
+}
+#toggle:checked ~ .main-container button{
+    background-color: #232823;
+    color: #90a0d9;
+    border-color: #90a0d9;
+}
+#toggle:checked ~ .main-container button::before{
+    background-color: #90a0d9;
+}
+#toggle:checked ~ .main-container button:hover{
+    color: #232823;
+}
+#toggle:checked ~.main-container .project{
+    box-shadow: rgba(0,0,0,0.16) 0px 10px 36px 0px,rgba(0,0,0,0.06) 0px 0px 0px 1px;
+}
+#toggle:checked~.main-container .skills-section li{
+    box-shadow: rgba(0,0,0,0.16) 0px 10px 36px 0px,rgba(0,0,0,0.06) 0px 0px 0px 1px;
+
+}
+label#in-toggle{
+    top:50px;
+    left: 50%;
+    cursor: pointer;
 }
 
 ul{
@@ -297,6 +393,7 @@ p.user-desc {
     box-shadow: 1px 1px 15px 2px #ccc, -1px -1px 15px 2px #ddd;
     padding: 2rem;
     cursor: pointer;
+    color: #555;
 }
 
 .project-links {
@@ -354,6 +451,7 @@ ul li>small {
     transform: translateY(0);
     transition:transform 0.2s ease-out;
     cursor: pointer;
+    color: #555;
 }
 .skills-list li:hover{
 transform: translateY(-5px);
